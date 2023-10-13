@@ -1,3 +1,5 @@
+# gcloud alpha monitoring policies create --policy-from-file=adaptive_protection_alert.json
+
 {
   "name": "projects/*/alertPolicies/12220852840272900044/conditions/12220852840272899115",
 "displayName": "adaptive protection alert",
