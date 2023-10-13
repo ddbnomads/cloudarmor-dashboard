@@ -1,3 +1,5 @@
+# gcloud alpha monitoring policies create --policy-from-file=Layer_3_Layer_4_DDOS_Alert.json
+
 {
   "name": "projects/*/alertPolicies/11176330617161177580",
   "displayName": "Layer 3/Layer 4 DDOS Alert",
