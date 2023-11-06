@@ -1,0 +1,13 @@
+#gcloud logging metrics create lfi --config-from-file=lfi.json
+{
+  "name": "projects/*/metricDescriptors/logging.googleapis.com/user/lfi",
+  "labels": [
+    {
+      "key": "log"
+    }
+  ],
+  "metricKind": "DELTA",
+  "valueType": "INT64",
+  "unit": "1",
+  "type": "logging.googleapis.com/user/lfi"
+}
