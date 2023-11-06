@@ -1,0 +1,13 @@
+#gcloud logging metrics create java --config-from-file=php.json
+{
+  "name": "projects/*/metricDescriptors/logging.googleapis.com/user/php",
+  "labels": [
+    {
+      "key": "log"
+    }
+  ],
+  "metricKind": "DELTA",
+  "valueType": "INT64",
+  "unit": "1",
+  "type": "logging.googleapis.com/user/php"
+}
