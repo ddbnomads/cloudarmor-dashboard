@@ -1,6 +1,6 @@
 #gcloud logging metrics create adaptive_protection --config-from-file=Session_fixaction.json
 
-
+{
 filter: jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds =~ "sessionfixation"
   OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds =~ "sessionfixation"
 metricDescriptor:
@@ -10,3 +10,4 @@ metricDescriptor:
   unit: '1'
   valueType: INT64
 name: Session_fixaction
+}
