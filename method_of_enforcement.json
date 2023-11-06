@@ -1,4 +1,4 @@
-#gcloud logging metrics create java --config-from-file=java.json
+#gcloud logging metrics create method_of_enforcement --config-from-file=method_of_enforcement.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/method_of_enforcement",
   "labels": [
