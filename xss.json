@@ -16,4 +16,5 @@
   "type": "logging.googleapis.com/user/xss",
   "unit": "1",
   "valueType": "INT64"
+  },
 }
