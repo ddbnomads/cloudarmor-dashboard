@@ -1,13 +1,13 @@
 #gcloud logging metrics create adaptive_protection --config-from-file=Session_fixaction.json
-
 {
-filter: jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds =~ "sessionfixation"
-  OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds =~ "sessionfixation"
-metricDescriptor:
-  metricKind: DELTA
-  name: projects/*/metricDescriptors/logging.googleapis.com/user/Session_fixaction
-  type: logging.googleapis.com/user/Session_fixaction
-  unit: '1'
-  valueType: INT64
-name: Session_fixaction
+  "name": "projects/lab-kk/metricDescriptors/logging.googleapis.com/user/Session_fixaction",
+  "labels": [
+    {
+      "key": "log"
+    }
+  ],
+  "metricKind": "DELTA",
+  "valueType": "INT64",
+  "unit": "1",
+  "type": "logging.googleapis.com/user/Session_fixaction"
 }
