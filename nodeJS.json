@@ -1,0 +1,13 @@
+#gcloud logging metrics create java --config-from-file=nodeJS.json
+{
+  "name": "projects/*/metricDescriptors/logging.googleapis.com/user/nodeJS",
+  "labels": [
+    {
+      "key": "log"
+    }
+  ],
+  "metricKind": "DELTA",
+  "valueType": "INT64",
+  "unit": "1",
+  "type": "logging.googleapis.com/user/nodeJS"
+}
