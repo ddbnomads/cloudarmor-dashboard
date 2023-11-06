@@ -1,7 +1,11 @@
 #gcloud logging metrics create xss --config-from-file=xss.json
 {
+  "name": "xss",
+  "description": "XSS",
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds =~ "xss" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   =~ "xss",
+  "metricDescriptor": {
+    "name": "projects/*/metricDescriptors/logging.googleapis.com/user/xss",
   "labels": [
     {
       "key": "log"
@@ -10,4 +14,5 @@
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
+  "type": "logging.googleapis.com/user/xss"
 }
