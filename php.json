@@ -1,4 +1,4 @@
-#gcloud logging metrics create java --config-from-file=php.json
+#gcloud logging metrics create php --config-from-file=php.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/php",
   "labels": [
