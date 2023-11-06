@@ -2,8 +2,8 @@
 {
   "name": "xss",
   "description": "XSS",
-  "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds =~ "xss" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
-  =~ "xss",
+  "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"xss\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
+  \=\~ \"xss\",
   "metricDescriptor": {
   "description": "XSS",
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/xss",
