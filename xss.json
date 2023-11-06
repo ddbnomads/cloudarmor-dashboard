@@ -10,9 +10,9 @@
     {
       "key": "log"
     }
-  ],
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
   "type": "logging.googleapis.com/user/xss"
+  ],
 }
