@@ -5,14 +5,15 @@
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds =~ "xss" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   =~ "xss",
   "metricDescriptor": {
-    "name": "projects/*/metricDescriptors/logging.googleapis.com/user/xss",
-  "labels": [
-    {
-      "key": "log"
-    }
-  "metricKind": "DELTA",
-  "valueType": "INT64",
-  "unit": "1",
-  "type": "logging.googleapis.com/user/xss"
+  "description": "XSS",
+  "name": "projects/*/metricDescriptors/logging.googleapis.com/user/xss",
+  "labels":[
+  { 
+    "key": "log" 
+  }
   ],
+  "metricKind": "DELTA",
+  "type": "logging.googleapis.com/user/xss",
+  "unit": "1",
+  "valueType": "INT64"
 }
