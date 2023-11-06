@@ -1,4 +1,4 @@
-#gcloud logging metrics create session_fixaction --config-from-file=session_fixaction.json
+#gcloud logging metrics create scanner_detection --config-from-file=scanner_detection.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/scanner_detection",
   "labels": [
