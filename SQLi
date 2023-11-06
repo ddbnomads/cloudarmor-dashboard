@@ -1,0 +1,14 @@
+#gcloud logging metrics create session_fixaction --config-from-file=sqli.json
+{
+  "name": "projects/lab-kk/metricDescriptors/logging.googleapis.com/user/sqli",
+  "labels": [
+    {
+      "key": "log"
+    }
+  ],
+  "metricKind": "DELTA",
+  "valueType": "INT64",
+  "unit": "1",
+  "description": "Number of SQL injection attack ",
+  "type": "logging.googleapis.com/user/sqli"
+}
