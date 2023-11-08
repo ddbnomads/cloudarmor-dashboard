@@ -1,11 +1,7 @@
 #gcloud logging metrics create scanner_detection --config-from-file=scanner_detection.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/scanner_detection",
-  "labels": [
-    {
-      "key": "log"
-    }
-  ],
+
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
