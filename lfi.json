@@ -1,6 +1,8 @@
 #gcloud logging metrics create lfi --config-from-file=lfi.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/lfi",
+  "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"lfi\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
+  \=\~ \"lfi\",
 
   "metricKind": "DELTA",
   "valueType": "INT64",
