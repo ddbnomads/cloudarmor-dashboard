@@ -7,7 +7,7 @@
   "metricDescriptor": {
   "labels":[
   { 
-    "key": "log" 
+    #"key": "log" 
   }
   ],
   "metricKind": "DELTA",
