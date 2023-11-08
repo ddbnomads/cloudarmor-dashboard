@@ -1,11 +1,7 @@
 #gcloud logging metrics create session_fixaction --config-from-file=session_fixaction.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/session_fixaction",
-  "labels": [
-    {
-      "key": "log"
-    }
-  ],
+
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
