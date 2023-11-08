@@ -1,7 +1,7 @@
 # gcloud alpha monitoring policies create --policy-from-file=php_alert.json
 
 {
-  "displayName": "",
+  "displayName": "PHP Alert",
   "userLabels": {},
   "conditions": [
     {
