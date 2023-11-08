@@ -1,7 +1,9 @@
 #gcloud logging metrics create php --config-from-file=php.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/php",
- 
+  "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"php\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
+  \=\~ \"php\",
+  
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
