@@ -1,11 +1,7 @@
 #gcloud logging metrics create rfi --config-from-file=rfi.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/rfi",
-  "labels": [
-    {
-      "key": "log"
-    }
-  ],
+ 
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
