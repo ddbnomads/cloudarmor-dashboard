@@ -1,3 +1,5 @@
+# gcloud alpha monitoring policies create --policy-from-file=php.json
+
 {
   "displayName": "",
   "userLabels": {},
