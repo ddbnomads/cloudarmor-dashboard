@@ -5,11 +5,7 @@
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"xss\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   \=\~ \"xss\",
   "metricDescriptor": {
-  "labels":[
-  { 
-    {"key": "log"}
-  }
-  ],
+
   "metricKind": "DELTA",
   "type": "logging.googleapis.com/user/xss",
   "unit": "1",
