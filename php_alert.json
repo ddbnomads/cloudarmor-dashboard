@@ -1,7 +1,7 @@
 # gcloud alpha monitoring policies create --policy-from-file=php_alert.json
 
 {
-  "displayName": ""projects/*/alertPolicies/8151589516015903944"",
+  "displayName": "projects/*/alertPolicies/8151589516015903944",
   "userLabels": {},
   "conditions": [
     {
