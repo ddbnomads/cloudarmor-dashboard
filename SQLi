@@ -1,11 +1,7 @@
 #gcloud logging metrics create sqli --config-from-file=sqli.json
 {
   "name": "projects/lab-kk/metricDescriptors/logging.googleapis.com/user/sqli",
-  "labels": [
-    {
-      "key": "log"
-    }
-  ],
+
   "metricKind": "DELTA",
   "valueType": "INT64",
   "unit": "1",
