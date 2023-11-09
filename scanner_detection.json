@@ -1,7 +1,7 @@
 #gcloud logging metrics create scanner_detection --config-from-file=scanner_detection.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/scanner_detection",
-  "description": "xss",
+  "description": "scanner detection",
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"scanner_detection\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   \=\~ \"scanner_detection\",
   "metricDescriptor": {
