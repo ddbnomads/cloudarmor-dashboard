@@ -1,7 +1,7 @@
 #gcloud logging metrics create session_fixaction --config-from-file=session_fixaction.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/session_fixaction",
-  "description": "xss",
+  "description": "session fixaction",
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"session_fixaction\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   \=\~ \"session_fixaction\",
   "metricDescriptor": {
