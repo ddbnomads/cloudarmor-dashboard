@@ -1,11 +1,14 @@
 #gcloud logging metrics create java --config-from-file=java.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/java",
+  "description": "Java",
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"java\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   \=\~ \"java\",
-  
+  "metricDescriptor": {
+
   "metricKind": "DELTA",
-  "valueType": "INT64",
+  "type": "logging.googleapis.com/user/java",
   "unit": "1",
-  "type": "logging.googleapis.com/user/java"
+  "valueType": "INT64"
+  },
 }
