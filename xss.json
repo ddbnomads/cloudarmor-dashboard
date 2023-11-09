@@ -1,14 +1,10 @@
-#gcloud logging metrics create xss --config-from-file=xss.json
+#gcloud logging metrics create sqli --config-from-file=sqli.json
 {
-  "name": "projects/*/metricDescriptors/logging.googleapis.com/user/xss",
-  "description": "xss",
-  "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"xss\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
-  \=\~ \"xss\",
-  "metricDescriptor": {
-
+  "name": "projects/lab-kk/metricDescriptors/logging.googleapis.com/user/sqli",
+  "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"sqli\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds\=\~ \"sqli\",
   "metricKind": "DELTA",
-  "type": "logging.googleapis.com/user/xss",
+  "valueType": "INT64",
   "unit": "1",
-  "valueType": "INT64"
-  },
+  "description": "Number of SQL injection attack ",
+  "type": "logging.googleapis.com/user/sqli"
 }
