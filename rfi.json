@@ -1,7 +1,7 @@
 #gcloud logging metrics create rfi --config-from-file=rfi.json
 {
   "name": "projects/*/metricDescriptors/logging.googleapis.com/user/rfi",
-  "description": "xss",
+  "description": "RFI",
   "filter": jsonPayload.enforcedSecurityPolicy.preconfiguredExprIds \=\~ \"rfi\" OR jsonPayload.previewSecurityPolicy.preconfiguredExprIds
   \=\~ \"rfi\",
   "metricDescriptor": {
